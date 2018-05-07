@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="Signup"></ion-icon>
+    </button>
+    <ion-title>Cadastro</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding="true" class="manual-ios-statusbar-padding">
+  <div class="spacer" style="width: 299.531px; height: 39.9844px;"></div>
+  <form id="signup-form2" class="list">
+    <ion-list id="signup-list2">
+      <label class="item item-input" id="signup-input3" name="NOME">
+        <span class="input-label">Nome</span>
+        <input type="text" placeholder="Nome">
+      </label>
+      <label class="item item-input" id="signup-input4" name="EMAIL">
+        <span class="input-label">Email</span>
+        <input type="email" placeholder="Email">
+      </label>
+      <label class="item item-input" id="signup-input5" name="SENHA">
+        <span class="input-label">Senha</span>
+        <input type="password" placeholder="Senha">
+      </label>
+    </ion-list>
+  </form>
+  <form id="signup-form4" class="list">
+    <ion-toggle toggle-class="toggle-positive" id="signup-toggle2" name="Idoso">Idoso</ion-toggle>
+    <ion-toggle toggle-class="toggle-positive" id="signup-toggle8" name="neto">Neto</ion-toggle>
+    <ion-toggle toggle-class="toggle-positive" id="signup-toggle9" name="Idoso">Responsável</ion-toggle>
+  </form>
+
+  <!-- <a ui-sref="cadstro()" id="signup-button9" class="button button-dark button-block">Cadastrar</a>
+      <a ui-sref="login()" id="signup-button12" class="button button-dark button-block button-outline">Já possui cadastro?</a> -->
+</ion-content>
