@@ -12,6 +12,13 @@ import { LoginPage } from '../pages/login/login';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { SignupPage } from '../pages/signup/signup';
+import { CadastroPage } from '../pages/cadastro/cadastro';
+import { FormaPagamentoPage } from '../pages/forma-pagamento/forma-pagamento';
+import { ConfigurarLembretePage } from '../pages/configurar-lembrete/configurar-lembrete';
+import { AcompanharNetoPage } from '../pages/acompanhar-neto/acompanhar-neto';
+import { SelecionarFormaPagamentoPage } from '../pages/selecionar-forma-pagamento/selecionar-forma-pagamento';
+import { AgendamentoPage } from '../pages/agendamento/agendamento';
+import { ClassificarNetoPage } from '../pages/classificar-neto/classificar-neto';
 
 @NgModule({
   declarations: [
@@ -20,6 +27,14 @@ import { SignupPage } from '../pages/signup/signup';
     ListPage,
     LoginPage,
     SignupPage,
+    CadastroPage,
+    FormaPagamentoPage,
+    SelecionarFormaPagamentoPage,
+    AgendamentoPage,
+    ConfigurarLembretePage,
+    AcompanharNetoPage,
+    ClassificarNetoPage,
+    
     // SignupPage,
   ],
   imports: [
@@ -33,6 +48,14 @@ import { SignupPage } from '../pages/signup/signup';
     ListPage,
     LoginPage,
     SignupPage,
+    CadastroPage,
+    FormaPagamentoPage,
+    SelecionarFormaPagamentoPage,
+    AgendamentoPage,
+    ConfigurarLembretePage,
+    AcompanharNetoPage,
+    ClassificarNetoPage,
+
   ],
   providers: [
     StatusBar,

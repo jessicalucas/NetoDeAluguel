@@ -5,6 +5,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
+import { CadastroPage } from '../pages/cadastro/cadastro';
+import { FormaPagamentoPage } from '../pages/forma-pagamento/forma-pagamento';
+import { SelecionarFormaPagamentoPage } from '../pages/selecionar-forma-pagamento/selecionar-forma-pagamento';
+import { AgendamentoPage } from '../pages/agendamento/agendamento';
+import { ConfigurarLembretePage } from '../pages/configurar-lembrete/configurar-lembrete';
+import { AcompanharNetoPage } from '../pages/acompanhar-neto/acompanhar-neto';
+import { ClassificarNetoPage } from '../pages/classificar-neto/classificar-neto';
 // import { SignupPage } from '../pages/signup/signup';
 
 @Component({
@@ -21,11 +28,17 @@ export class MyApp {
     {
       this.initializeApp();
 
-      // used for an example of ngFor and navigation
+      // Barra lateral de navegação
       this.pages = [
         { title: 'Home', component: HomePage },
         { title: 'Login', component: LoginPage },
-
+        { title: 'Cadastro', component: CadastroPage },
+        { title: 'Forma de Pagamento', component: FormaPagamentoPage },
+        { title: 'Selecionar Forma de Pagamento', component: SelecionarFormaPagamentoPage },
+        { title: 'Agendamentos', component: AgendamentoPage },
+        { title: 'Configuração dos Lembretes', component: ConfigurarLembretePage },
+        { title: 'Acompanhar Neto', component: AcompanharNetoPage },
+        { title: 'Dar nota', component: ClassificarNetoPage }
       ];
 
     }
