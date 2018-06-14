@@ -398,6 +398,7 @@ var HomePage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_login__ = __webpack_require__(286);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -409,6 +410,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var LoginPage = /** @class */ (function () {
     function LoginPage(navCtrl) {
         this.navCtrl = navCtrl;
@@ -416,13 +418,14 @@ var LoginPage = /** @class */ (function () {
             email: '',
             password: ''
         };
+        this.login = new __WEBPACK_IMPORTED_MODULE_2__models_login__["a" /* Login */]();
     }
-    LoginPage.prototype.login = function () {
-        console.log('Login...');
+    LoginPage.prototype.validar = function () {
+        console.log(this.contato);
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\login\login.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="Menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Login</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n <ion-content padding>\n\n  <h3>Faça seu login</h3>\n\n   <form id="login-form7" class="list">\n\n    <ion-list id="login-list3">\n\n      <ion-item>\n\n        <ion-input type="text" placeholder="Email" clearInput></ion-input>\n\n      </ion-item>\n\n    \n\n      <ion-item>\n\n        <ion-input type="password" placeholder="Senha" clearInput></ion-input>\n\n      </ion-item>\n\n    </ion-list>\n\n    \n\n    <button ion-button>Entrar</button>\n\n    <button ion-button>Cadastrar</button>\n\n     <!-- <a ui-sref="signup()" id="login-button11" class="button button-positive button-block button-clear">Crie sua conta</a> -->\n\n  </form>\n\n</ion-content>'/*ion-inline-end:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\login\login.html"*/
+            selector: 'page-login',template:/*ion-inline-start:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\login\login.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="Menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Login</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n <ion-content padding>\n\n  <h1>Faça seu login</h1>\n\n  <ion-list>\n\n\n\n    <ion-item>\n\n      <ion-label stacked>Usuário</ion-label>\n\n      <ion-input type="email"[(ngModel)]="login.email"></ion-input>\n\n    </ion-item>\n\n  \n\n    <ion-item>\n\n      <ion-label stacked>Senha</ion-label>\n\n      <ion-input type="password"></ion-input>\n\n    </ion-item>\n\n  \n\n  </ion-list>\n\n  </form>\n\n</ion-content>'/*ion-inline-end:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\login\login.html"*/
         }),
         __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object])
     ], LoginPage);
@@ -456,26 +459,28 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(268);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_list_list__ = __webpack_require__(277);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_login_login__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_status_bar__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_splash_screen__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_signup_signup__ = __webpack_require__(278);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_cadastro_cadastro__ = __webpack_require__(99);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_forma_pagamento_forma_pagamento__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_configurar_lembrete_configurar_lembrete__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_acompanhar_neto_acompanhar_neto__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_selecionar_forma_pagamento_selecionar_forma_pagamento__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_agendamento_agendamento__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_classificar_neto_classificar_neto__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_list_list__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_login_login__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_status_bar__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_splash_screen__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_signup_signup__ = __webpack_require__(278);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_cadastro_cadastro__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_forma_pagamento_forma_pagamento__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_configurar_lembrete_configurar_lembrete__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_acompanhar_neto_acompanhar_neto__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_selecionar_forma_pagamento_selecionar_forma_pagamento__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_agendamento_agendamento__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_classificar_neto_classificar_neto__ = __webpack_require__(102);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -500,22 +505,22 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */],
-                __WEBPACK_IMPORTED_MODULE_5__pages_list_list__["a" /* ListPage */],
-                __WEBPACK_IMPORTED_MODULE_6__pages_login_login__["a" /* LoginPage */],
-                __WEBPACK_IMPORTED_MODULE_9__pages_signup_signup__["a" /* SignupPage */],
-                __WEBPACK_IMPORTED_MODULE_10__pages_cadastro_cadastro__["a" /* CadastroPage */],
-                __WEBPACK_IMPORTED_MODULE_11__pages_forma_pagamento_forma_pagamento__["a" /* FormaPagamentoPage */],
-                __WEBPACK_IMPORTED_MODULE_14__pages_selecionar_forma_pagamento_selecionar_forma_pagamento__["a" /* SelecionarFormaPagamentoPage */],
-                __WEBPACK_IMPORTED_MODULE_15__pages_agendamento_agendamento__["a" /* AgendamentoPage */],
-                __WEBPACK_IMPORTED_MODULE_12__pages_configurar_lembrete_configurar_lembrete__["a" /* ConfigurarLembretePage */],
-                __WEBPACK_IMPORTED_MODULE_13__pages_acompanhar_neto_acompanhar_neto__["a" /* AcompanharNetoPage */],
-                __WEBPACK_IMPORTED_MODULE_16__pages_classificar_neto_classificar_neto__["a" /* ClassificarNetoPage */],
+                __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_5__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_6__pages_list_list__["a" /* ListPage */],
+                __WEBPACK_IMPORTED_MODULE_7__pages_login_login__["a" /* LoginPage */],
+                __WEBPACK_IMPORTED_MODULE_10__pages_signup_signup__["a" /* SignupPage */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_cadastro_cadastro__["a" /* CadastroPage */],
+                __WEBPACK_IMPORTED_MODULE_12__pages_forma_pagamento_forma_pagamento__["a" /* FormaPagamentoPage */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_selecionar_forma_pagamento_selecionar_forma_pagamento__["a" /* SelecionarFormaPagamentoPage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_agendamento_agendamento__["a" /* AgendamentoPage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_configurar_lembrete_configurar_lembrete__["a" /* ConfigurarLembretePage */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_acompanhar_neto_acompanhar_neto__["a" /* AcompanharNetoPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_classificar_neto_classificar_neto__["a" /* ClassificarNetoPage */],
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/cadastro/cadastro.module#CadastroPageModule', name: 'CadastroPage', segment: 'cadastro', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/agendamento/agendamento.module#AgendamentoPageModule', name: 'AgendamentoPage', segment: 'agendamento', priority: 'low', defaultHistory: [] },
@@ -526,25 +531,26 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/forma-pagamento/forma-pagamento.module#FormaPagamentoPageModule', name: 'FormaPagamentoPage', segment: 'forma-pagamento', priority: 'low', defaultHistory: [] }
                     ]
                 }),
+                __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormsModule */]
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicApp */]],
             entryComponents: [
-                __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */],
-                __WEBPACK_IMPORTED_MODULE_5__pages_list_list__["a" /* ListPage */],
-                __WEBPACK_IMPORTED_MODULE_6__pages_login_login__["a" /* LoginPage */],
-                __WEBPACK_IMPORTED_MODULE_9__pages_signup_signup__["a" /* SignupPage */],
-                __WEBPACK_IMPORTED_MODULE_10__pages_cadastro_cadastro__["a" /* CadastroPage */],
-                __WEBPACK_IMPORTED_MODULE_11__pages_forma_pagamento_forma_pagamento__["a" /* FormaPagamentoPage */],
-                __WEBPACK_IMPORTED_MODULE_14__pages_selecionar_forma_pagamento_selecionar_forma_pagamento__["a" /* SelecionarFormaPagamentoPage */],
-                __WEBPACK_IMPORTED_MODULE_15__pages_agendamento_agendamento__["a" /* AgendamentoPage */],
-                __WEBPACK_IMPORTED_MODULE_12__pages_configurar_lembrete_configurar_lembrete__["a" /* ConfigurarLembretePage */],
-                __WEBPACK_IMPORTED_MODULE_13__pages_acompanhar_neto_acompanhar_neto__["a" /* AcompanharNetoPage */],
-                __WEBPACK_IMPORTED_MODULE_16__pages_classificar_neto_classificar_neto__["a" /* ClassificarNetoPage */],
+                __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_5__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_6__pages_list_list__["a" /* ListPage */],
+                __WEBPACK_IMPORTED_MODULE_7__pages_login_login__["a" /* LoginPage */],
+                __WEBPACK_IMPORTED_MODULE_10__pages_signup_signup__["a" /* SignupPage */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_cadastro_cadastro__["a" /* CadastroPage */],
+                __WEBPACK_IMPORTED_MODULE_12__pages_forma_pagamento_forma_pagamento__["a" /* FormaPagamentoPage */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_selecionar_forma_pagamento_selecionar_forma_pagamento__["a" /* SelecionarFormaPagamentoPage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_agendamento_agendamento__["a" /* AgendamentoPage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_configurar_lembrete_configurar_lembrete__["a" /* ConfigurarLembretePage */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_acompanhar_neto_acompanhar_neto__["a" /* AcompanharNetoPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_classificar_neto_classificar_neto__["a" /* ClassificarNetoPage */],
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_7__ionic_native_status_bar__["a" /* StatusBar */],
-                __WEBPACK_IMPORTED_MODULE_8__ionic_native_splash_screen__["a" /* SplashScreen */],
+                __WEBPACK_IMPORTED_MODULE_8__ionic_native_status_bar__["a" /* StatusBar */],
+                __WEBPACK_IMPORTED_MODULE_9__ionic_native_splash_screen__["a" /* SplashScreen */],
                 { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicErrorHandler */] }
             ]
         })
@@ -738,6 +744,21 @@ var SignupPage = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=signup.js.map
+
+/***/ }),
+
+/***/ 286:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Login; });
+var Login = /** @class */ (function () {
+    function Login() {
+    }
+    return Login;
+}());
+
+//# sourceMappingURL=login.js.map
 
 /***/ }),
 
