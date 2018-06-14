@@ -8,10 +8,7 @@ import { Login } from '../../models/login';
 })
 export class LoginPage {
   login: Login
-  private credential: Object = {
-    email: '',
-    password: ''
-  };
+  
   constructor(public navCtrl: NavController) {
     this.login = new Login();
   }
