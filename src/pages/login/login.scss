@@ -1,2 +1,21 @@
-page-login {
+page-login { $padding: 6px;
+
+  nav {
+    ul {
+      margin: 0;
+      padding: $padding;
+      list-style: none;
+    }
+  
+    li { display: inline-block; }
+  
+    a {
+      display: block;
+      padding: $padding 12px;
+      text-decoration: none;
+    }
+  }
+
+  $text-input-highlight-color-valid:green;
+  $text-input-highlight-color-invalid:red;
 }

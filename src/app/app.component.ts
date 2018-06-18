@@ -12,7 +12,8 @@ import { AgendamentoPage } from '../pages/agendamento/agendamento';
 import { ConfigurarLembretePage } from '../pages/configurar-lembrete/configurar-lembrete';
 import { AcompanharNetoPage } from '../pages/acompanhar-neto/acompanhar-neto';
 import { ClassificarNetoPage } from '../pages/classificar-neto/classificar-neto';
-// import { SignupPage } from '../pages/signup/signup';
+import { DatabaseProvider} from '../providers/database/database';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -24,39 +25,46 @@ export class MyApp {
 
   pages: Array<{ title: string, component: any }>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, public dbProvider: DatabaseProvider) {
     {
-      this.initializeApp();
+      //this.initializeApp();
+      this.platform.ready().then(() => {
+      this.criaBanco(dbProvider);});
 
       // Barra lateral de navegação
       this.pages = [
-        { title: 'Home', component: HomePage },
+        // { title: 'Home', component: HomePage },
         { title: 'Login', component: LoginPage },
         { title: 'Cadastro', component: CadastroPage },
         { title: 'Forma de Pagamento', component: FormaPagamentoPage },
         { title: 'Selecionar Forma de Pagamento', component: SelecionarFormaPagamentoPage },
         { title: 'Agendamentos', component: AgendamentoPage },
-        { title: 'Configuração dos Lembretes', component: ConfigurarLembretePage },
-        { title: 'Acompanhar Neto', component: AcompanharNetoPage },
-        { title: 'Dar nota', component: ClassificarNetoPage }
+        // { title: 'Configuração dos Lembretes', component: ConfigurarLembretePage },
+        // { title: 'Acompanhar Neto', component: AcompanharNetoPage },
+        // { title: 'Dar nota', component: ClassificarNetoPage }
       ];
 
     }
 
   }
 
-  initializeApp() {
-    this.platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
-    });
+  criaBanco(dbProvider)
+  {
+
+    this.statusBar.styleDefault();
+    dbProvider.createDatabase()
+        .then(() => {
+          // fechando a SplashScreen somente quando o banco for criado
+          this.openHomePage(this.splashScreen);
+        })
+        .catch(() => {
+          // ou se houver erro na criação do banco
+          this.openHomePage(this.splashScreen);
+        });
   }
 
-  openPage(page) {
-    // Reset the content nav to have just this page
-    // we wouldn't want the back button to show in this scenario
-    this.nav.setRoot(page.component);
+  private openHomePage(splashScreen: SplashScreen) {
+    splashScreen.hide();
+    this.rootPage = HomePage;
   }
 }
