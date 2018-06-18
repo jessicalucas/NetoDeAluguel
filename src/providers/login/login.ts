@@ -2,7 +2,6 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { SQLiteObject } from '@ionic-native/sqlite';
 import { DatabaseProvider } from '../database/database';
-import { ListPage } from '../../pages/list/list';
 /*
   Generated class for the LoginProvider provider.
 

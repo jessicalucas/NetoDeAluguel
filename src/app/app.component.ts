@@ -3,16 +3,16 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { HomePage } from '../pages/home/home';
+// import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { CadastroPage } from '../pages/cadastro/cadastro';
 import { FormaPagamentoPage } from '../pages/forma-pagamento/forma-pagamento';
 import { SelecionarFormaPagamentoPage } from '../pages/selecionar-forma-pagamento/selecionar-forma-pagamento';
 import { AgendamentoPage } from '../pages/agendamento/agendamento';
-import { ConfigurarLembretePage } from '../pages/configurar-lembrete/configurar-lembrete';
-import { AcompanharNetoPage } from '../pages/acompanhar-neto/acompanhar-neto';
-import { ClassificarNetoPage } from '../pages/classificar-neto/classificar-neto';
-import { DatabaseProvider} from '../providers/database/database';
+// import { ConfigurarLembretePage } from '../pages/configurar-lembrete/configurar-lembrete';
+// import { AcompanharNetoPage } from '../pages/acompanhar-neto/acompanhar-neto';
+// import { ClassificarNetoPage } from '../pages/classificar-neto/classificar-neto';
+import { DatabaseProvider } from '../providers/database/database';
 
 
 @Component({
@@ -29,7 +29,8 @@ export class MyApp {
     {
       //this.initializeApp();
       this.platform.ready().then(() => {
-      this.criaBanco(dbProvider);});
+        this.criaBanco();
+      });
 
       // Barra lateral de navegação
       this.pages = [
@@ -48,23 +49,22 @@ export class MyApp {
 
   }
 
-  criaBanco(dbProvider)
-  {
+  criaBanco() {
 
     this.statusBar.styleDefault();
-    dbProvider.createDatabase()
-        .then(() => {
-          // fechando a SplashScreen somente quando o banco for criado
-          this.openHomePage(this.splashScreen);
-        })
-        .catch(() => {
-          // ou se houver erro na criação do banco
-          this.openHomePage(this.splashScreen);
-        });
+    this.dbProvider.createDatabase()
+      .then(() => {
+        // fechando a SplashScreen somente quando o banco for criado
+        this.openHomePage(this.splashScreen);
+      })
+      .catch(() => {
+        // ou se houver erro na criação do banco
+        this.openHomePage(this.splashScreen);
+      });
   }
 
   private openHomePage(splashScreen: SplashScreen) {
     splashScreen.hide();
-    this.rootPage = HomePage;
+    this.rootPage = LoginPage;
   }
 }
