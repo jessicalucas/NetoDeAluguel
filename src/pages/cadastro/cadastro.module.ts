@@ -1,16 +1,8 @@
-import { NgModule } from '@angular/core';
-import { IonicPageModule } from 'ionic-angular';
-import { CadastroPage } from './cadastro';
+import { DateTime } from "ionic-angular";
 
-@NgModule({
-  declarations: [
-    CadastroPage,
-  ],
-  imports: [
-    IonicPageModule.forChild(CadastroPage),
-  ],
-  exports: [
-    CadastroPage
-  ]
-})
-export class CadastroPageModule {}
+export class CadastroPageModule {
+  nome: string;
+  sexo : string; 
+  datanascimento:DateTime;
+  telefone:string;
+}

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams, ToastController  } from 'ionic-angular';
 // import { Login } from '../login/login.module';
 import { LoginProvider, Login} from '../../providers/login/login';
+import { CadastroPage } from '../cadastro/cadastro';
 
 @Component({
   selector: 'page-login',
@@ -13,6 +14,11 @@ export class LoginPage {
   constructor( public navCtrl: NavController, public navParams: NavParams,
     private toast: ToastController, private loginProvider: LoginProvider) {
     this.model = new Login();
+  }
+
+  abrirnovatela()
+  {
+    this.navCtrl.push(CadastroPage);
   }
 
   validar() {

@@ -147,7 +147,7 @@ var CadastroPage = /** @class */ (function () {
     };
     CadastroPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-cadastro',template:/*ion-inline-start:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\cadastro\cadastro.html"*/'<!--\n\n  Generated template for the CadastroPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n      <button ion-button menuToggle>\n\n          <ion-icon name="Menu"></ion-icon>\n\n        </button>\n\n    <ion-title>Cadastro</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <!-- <form id="cadastroForm" class="list"> -->\n\n  <ion-list id="cadastroLista">\n\n    <ion-item>\n\n      <ion-input type="text" placeholder="Nome" clearInput></ion-input>\n\n    </ion-item>\n\n  \n\n    <ion-item>\n\n      <ion-input type="number" placeholder="Telefone" clearInput></ion-input>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n      <ion-input type="text" placeholder="Sexo" clearInput></ion-input>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n      <ion-input type="number" placeholder="Data Nascimento" clearInput></ion-input>\n\n    </ion-item>\n\n  </ion-list>\n\n\n\n  <!-- <button ion-button>Confirmar</button> -->\n\n  <!-- </form> -->\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\cadastro\cadastro.html"*/,
+            selector: 'page-cadastro',template:/*ion-inline-start:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\cadastro\cadastro.html"*/'<!--\n\n  Generated template for the CadastroPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n      <button ion-button menuToggle>\n\n          <ion-icon name="Menu"></ion-icon>\n\n        </button>\n\n    <ion-title>Cadastro</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <!-- <form id="cadastroForm" class="list"> -->\n\n  <ion-list id="cadastroLista">\n\n    <ion-item>\n\n      <ion-input type="text" placeholder="Nome" clearInput></ion-input>\n\n    </ion-item>\n\n  \n\n    <ion-item>\n\n      <ion-input type="number" placeholder="Telefone" clearInput></ion-input>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n      <ion-input type="text" placeholder="Sexo" clearInput></ion-input>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n      <ion-input type="date" placeholder="Data Nascimento" clearInput></ion-input>\n\n    </ion-item>\n\n  </ion-list>\n\n  <button ion-button block large color="dark"  >Entrar</button>\n\n  <!-- <button ion-button>Confirmar</button> -->\n\n  <!-- </form> -->\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\cadastro\cadastro.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], CadastroPage);
@@ -196,7 +196,7 @@ var FormaPagamentoPage = /** @class */ (function () {
     };
     FormaPagamentoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-forma-pagamento',template:/*ion-inline-start:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\forma-pagamento\forma-pagamento.html"*/'<!--\n\n  Generated template for the FormaPagamentoPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n      <button ion-button menuToggle>\n\n          <ion-icon name="Menu"></ion-icon>\n\n        </button>\n\n    <ion-title>Formas de Pagamento</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-list id="cadastroLista">\n\n        <ion-item>\n\n          <ion-input type="text" placeholder="Nome" clearInput></ion-input>\n\n        </ion-item>\n\n      \n\n        <ion-item>\n\n          <ion-input type="number" placeholder="Telefone" clearInput></ion-input>\n\n        </ion-item>\n\n    \n\n        <ion-item>\n\n          <ion-input type="text" placeholder="Sexo" clearInput></ion-input>\n\n        </ion-item>\n\n    \n\n        <ion-item>\n\n          <ion-input type="number" placeholder="Data Nascimento" clearInput></ion-input>\n\n        </ion-item>\n\n      </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\forma-pagamento\forma-pagamento.html"*/,
+            selector: 'page-forma-pagamento',template:/*ion-inline-start:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\forma-pagamento\forma-pagamento.html"*/'<!--\n\n  Generated template for the FormaPagamentoPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n      <button ion-button menuToggle>\n\n          <ion-icon name="Menu"></ion-icon>\n\n        </button>\n\n    <ion-title>Formas de Pagamento</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-list id="cadastroLista">\n\n        <ion-item>\n\n          <ion-input type="text" placeholder="Nome do titular" clearInput></ion-input>\n\n        </ion-item>\n\n      \n\n        <ion-item>\n\n          <ion-input type="text" placeholder="Bandeira" clearInput></ion-input>\n\n        </ion-item>\n\n\n\n        <!-- <ion-item>\n\n            <ion-label>Month</ion-label>\n\n            <ion-select [(ngModel)]="filtermonthwise" interface="action-sheet" (ionChange)="monthfilter(filtermonthwise);">\n\n              <ion-option value="1">January</ion-option>\n\n              <ion-option value="2">February</ion-option>\n\n              <ion-option value="3">March</ion-option>\n\n              <ion-option value="4">April</ion-option>\n\n              <ion-option value="5">May</ion-option>\n\n              <ion-option value="6">June</ion-option>\n\n              <ion-option value="7">July</ion-option>\n\n              <ion-option value="8">August </ion-option>\n\n              <ion-option value="9">September</ion-option>\n\n              <ion-option value="10">October </ion-option>\n\n              <ion-option value="11">November </ion-option>\n\n              <ion-option value="12">December </ion-option>\n\n      \n\n            </ion-select>\n\n    </ion-item> -->\n\n\n\n        <ion-item>\n\n          <ion-input type="text" placeholder="Sexo" clearInput></ion-input>\n\n   \n\n        </ion-item>\n\n    \n\n        <ion-item>\n\n          <ion-input type="number" placeholder="Data Nascimento" clearInput></ion-input>\n\n        </ion-item>\n\n      </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\forma-pagamento\forma-pagamento.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], FormaPagamentoPage);
@@ -279,31 +279,27 @@ webpackEmptyAsyncContext.id = 114;
 var map = {
 	"../pages/acompanhar-neto/acompanhar-neto.module": [
 		282,
-		6
+		14
 	],
 	"../pages/agendamento/agendamento.module": [
 		283,
-		5
-	],
-	"../pages/cadastro/cadastro.module": [
-		284,
-		4
+		13
 	],
 	"../pages/classificar-neto/classificar-neto.module": [
 		285,
-		3
+		12
 	],
 	"../pages/configurar-lembrete/configurar-lembrete.module": [
 		286,
-		2
+		11
 	],
 	"../pages/forma-pagamento/forma-pagamento.module": [
 		287,
-		1
+		10
 	],
 	"../pages/selecionar-forma-pagamento/selecionar-forma-pagamento.module": [
 		288,
-		0
+		9
 	]
 };
 function webpackAsyncContext(req) {
@@ -387,7 +383,7 @@ var LoginPage = /** @class */ (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\login\login.html"*/'<br>\n\n<br><ion-header>\n\n  <!-- <ion-navbar color="light">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="Menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Login</ion-title>\n\n  </ion-navbar> -->\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <br>\n\n    <h1>Neto de Aluguel</h1>\n\n    <br>\n\n        <div class="circle">\n\n    <img src="assets/imgs/neto01.png">\n\n  </div>\n\n <h3>Entre ou crie sua conta</h3>\n\n  <ion-list>\n\n    <br>\n\n    <ion-item>\n\n      <ion-label stacked large>Usuário</ion-label>\n\n      <ion-input type="email" [(ngModel)]="model.email" placeholder="Insira o Email"></ion-input>\n\n    </ion-item>\n\n<br>\n\n    <ion-item>\n\n      <ion-label stacked large>Senha</ion-label>\n\n      <ion-input type="password" [(ngModel)]="model.senha" placeholder="Insira a Senha"></ion-input>\n\n    </ion-item>\n\n    <br>\n\n    <br>\n\n    <button ion-button block large color="dark"  >Entrar</button>\n\n<br>\n\n<br>\n\n    <button ion-button block large color="aposclicar">Cadastrar</button>\n\n    <!-- <button ion-button (click)="validar();">Salvar</button>\n\n    <button ion-button (click)="novo();">Novo</button> (click)="showToastWithCloseButton()"-->\n\n  </ion-list>\n\n</ion-content>'/*ion-inline-end:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\login\login.html"*/
+            selector: 'page-login',template:/*ion-inline-start:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\login\login.html"*/'<br>\n\n<br><ion-header>\n\n  <!-- <ion-navbar color="light">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="Menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Login</ion-title>\n\n  </ion-navbar> -->\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <br>\n\n    <h1>Neto de Aluguel</h1>\n\n    <br>\n\n        <div class="circle">\n\n    <img src="assets/imgs/neto01.png">\n\n  </div>\n\n <h3>Entre ou crie sua conta</h3>\n\n  <ion-list>\n\n    <br>\n\n    <ion-item>\n\n      <ion-label stacked large>Usuário</ion-label>\n\n      <ion-input type="email" [(ngModel)]="model.email" placeholder="Insira o Email"></ion-input>\n\n    </ion-item>\n\n<br>\n\n    <ion-item>\n\n      <ion-label stacked large>Senha</ion-label>\n\n      <ion-input type="password" [(ngModel)]="model.senha" placeholder="Insira a Senha"></ion-input>\n\n    </ion-item>\n\n    <br>\n\n    <br>\n\n    <button ion-button block large color="dark" (click)="abrirnovatela();" >Entrar</button>\n\n<br>\n\n<br>\n\n    <button ion-button block large color="aposclicar">Cadastrar</button>\n\n    <!-- <button ion-button (click)="validar();">Salvar</button>\n\n    <button ion-button (click)="novo();">Novo</button> (click)="showToastWithCloseButton()"-->\n\n  </ion-list>\n\n</ion-content>'/*ion-inline-end:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\login\login.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ToastController */], __WEBPACK_IMPORTED_MODULE_2__providers_login_login__["b" /* LoginProvider */]])

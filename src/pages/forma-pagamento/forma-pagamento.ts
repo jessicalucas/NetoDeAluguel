@@ -26,5 +26,9 @@ export class FormaPagamentoPage {
   formaPagamento(){
     console.log('formaPagamento');
   }
+  monthfilter() {
 
+    // console.log(this.filtermonthwise);
+
+  }
 }

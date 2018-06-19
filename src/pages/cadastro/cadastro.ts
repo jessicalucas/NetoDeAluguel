@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, ToastController  } from 'ionic-angular';
+import { FormaPagamentoPage } from '../forma-pagamento/forma-pagamento';
 
 /**
  * Generated class for the CadastroPage page.
@@ -8,7 +9,6 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-cadastro',
   templateUrl: 'cadastro.html',
@@ -26,4 +26,9 @@ export class CadastroPage {
   cadastro() {
     console.log('ionViewDidLoad CadastroPage');
   }
+
+  // abrirnovatela()
+  // {
+  //   this.navCtrl.push(FormaPagamentoPage);
+  // }
 }

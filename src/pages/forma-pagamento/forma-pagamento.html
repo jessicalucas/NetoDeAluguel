@@ -19,15 +19,35 @@
 <ion-content padding>
     <ion-list id="cadastroLista">
         <ion-item>
-          <ion-input type="text" placeholder="Nome" clearInput></ion-input>
+          <ion-input type="text" placeholder="Nome do titular" clearInput></ion-input>
         </ion-item>
       
         <ion-item>
-          <ion-input type="number" placeholder="Telefone" clearInput></ion-input>
+          <ion-input type="text" placeholder="Bandeira" clearInput></ion-input>
         </ion-item>
-    
+
+        <!-- <ion-item>
+            <ion-label>Month</ion-label>
+            <ion-select [(ngModel)]="filtermonthwise" interface="action-sheet" (ionChange)="monthfilter(filtermonthwise);">
+              <ion-option value="1">January</ion-option>
+              <ion-option value="2">February</ion-option>
+              <ion-option value="3">March</ion-option>
+              <ion-option value="4">April</ion-option>
+              <ion-option value="5">May</ion-option>
+              <ion-option value="6">June</ion-option>
+              <ion-option value="7">July</ion-option>
+              <ion-option value="8">August </ion-option>
+              <ion-option value="9">September</ion-option>
+              <ion-option value="10">October </ion-option>
+              <ion-option value="11">November </ion-option>
+              <ion-option value="12">December </ion-option>
+      
+            </ion-select>
+    </ion-item> -->
+
         <ion-item>
           <ion-input type="text" placeholder="Sexo" clearInput></ion-input>
+   
         </ion-item>
     
         <ion-item>
