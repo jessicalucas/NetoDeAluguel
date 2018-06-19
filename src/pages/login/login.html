@@ -1,28 +1,39 @@
-<ion-header>
-  <ion-navbar color="light">
+<br>
+<br><ion-header>
+  <!-- <ion-navbar color="light">
     <button ion-button menuToggle>
       <ion-icon name="Menu"></ion-icon>
     </button>
     <ion-title>Login</ion-title>
-  </ion-navbar>
+  </ion-navbar> -->
 </ion-header>
 
 <ion-content padding>
-  <h1>Faça seu login</h1>
+    <br>
+    <h1>Neto de Aluguel</h1>
+    <br>
+        <div class="circle">
+    <img src="assets/imgs/neto01.png">
+  </div>
+  <br>
+ <h3>Entre ou crie sua conta</h3>
   <ion-list>
-
+    <br>
     <ion-item>
       <ion-label stacked large>Usuário</ion-label>
-      <ion-input type="email" [(ngModel)]="model.email"></ion-input>
+      <ion-input type="email" [(ngModel)]="model.email" placeholder="Insira o Email"></ion-input>
     </ion-item>
-
+<br>
     <ion-item>
       <ion-label stacked large>Senha</ion-label>
-      <ion-input type="password" [(ngModel)]="model.senha"></ion-input>
+      <ion-input type="password" [(ngModel)]="model.senha" placeholder="Insira a Senha"></ion-input>
     </ion-item>
-
-    
+    <br>
+    <br>
     <button ion-button block large color="dark"  >Entrar</button>
+<br>
+<br>
+<br>
     <button ion-button block large color="aposclicar">Cadastrar</button>
     <!-- <button ion-button (click)="validar();">Salvar</button>
     <button ion-button (click)="novo();">Novo</button> (click)="showToastWithCloseButton()"-->

@@ -1,25 +1,40 @@
-page-login { $padding: 6px;
+page-login { $padding: 8px;
+ 
+h1{
+  text-align: center;
+};
 
-$color:(
-  antesclicar:black
-);
+h3{
+  text-align: center;
+};
 
-  nav {
-    ul {
-      margin: 0;
-      padding: $padding;
-      list-style: none;
-    }
-  
-    li { display: inline-block; }
-  
-    a {
-      display: block;
-      padding: $padding 12px;
-      text-decoration: none;
-    }
-  }
+input {
+    font-size:18px !important;
+    font-size-adjust: 0.3!important;
+};
 
-  $text-input-highlight-color-valid:green;
-  $text-input-highlight-color-invalid:red;
+$label-text-color:black !important;
+
+label{
+  font-size:18px !important;
+  font-size-adjust: 0.3!important;
+  color: black;
+};
+
+.circle {
+  background-color:white;
+  left:50%;
+  border-radius: 30%;
+  width: 170px;
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+  margin-left: -85px;
+}
+
+.circle img {
+  position: absolute;
+   bottom: 0;
+  width: 100%;
+};
 }
