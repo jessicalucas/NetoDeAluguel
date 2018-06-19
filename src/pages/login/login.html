@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="light">
     <button ion-button menuToggle>
       <ion-icon name="Menu"></ion-icon>
     </button>
@@ -12,15 +12,19 @@
   <ion-list>
 
     <ion-item>
-      <ion-label stacked>Usuário</ion-label>
+      <ion-label stacked large>Usuário</ion-label>
       <ion-input type="email" [(ngModel)]="model.email"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label stacked>Senha</ion-label>
+      <ion-label stacked large>Senha</ion-label>
       <ion-input type="password" [(ngModel)]="model.senha"></ion-input>
     </ion-item>
-    <button ion-button (click)="validar();">Salvar</button>
-    <button ion-button (click)="novo();">Novo</button>
+
+    
+    <button ion-button block large color="dark"  >Entrar</button>
+    <button ion-button block large color="aposclicar">Cadastrar</button>
+    <!-- <button ion-button (click)="validar();">Salvar</button>
+    <button ion-button (click)="novo();">Novo</button> (click)="showToastWithCloseButton()"-->
   </ion-list>
 </ion-content>
