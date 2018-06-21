@@ -1,4 +1,4 @@
-webpackJsonp([7],{
+webpackJsonp([6],{
 
 /***/ 100:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -6,7 +6,7 @@ webpackJsonp([7],{
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DatabaseProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_sqlite__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_sqlite__ = __webpack_require__(197);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -64,104 +64,6 @@ var DatabaseProvider = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AgendamentoPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the AgendamentoPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var AgendamentoPage = /** @class */ (function () {
-    function AgendamentoPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.agendamento();
-    }
-    AgendamentoPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad AgendamentoPage');
-    };
-    AgendamentoPage.prototype.agendamento = function () {
-        console.log('formaPagamento');
-    };
-    AgendamentoPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-agendamento',template:/*ion-inline-start:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\agendamento\agendamento.html"*/'<!--\n\n  Generated template for the AgendamentoPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n      <button ion-button menuToggle>\n\n          <ion-icon name="Menu"></ion-icon>\n\n        </button>\n\n    <ion-title>agendamento</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-list id="cadastroLista">\n\n        <ion-item>\n\n          <ion-input type="text" placeholder="Nome" clearInput></ion-input>\n\n        </ion-item>\n\n      \n\n        <ion-item>\n\n          <ion-input type="number" placeholder="Telefone" clearInput></ion-input>\n\n        </ion-item>\n\n    \n\n        <ion-item>\n\n          <ion-input type="text" placeholder="Sexo" clearInput></ion-input>\n\n        </ion-item>\n\n    \n\n        <ion-item>\n\n          <ion-input type="number" placeholder="Data Nascimento" clearInput></ion-input>\n\n        </ion-item>\n\n\n\n        <ion-item>\n\n          <ion-label>Start Time</ion-label>\n\n          <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeStarts"></ion-datetime>\n\n        </ion-item>\n\n      </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\agendamento\agendamento.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-    ], AgendamentoPage);
-    return AgendamentoPage;
-}());
-
-//# sourceMappingURL=agendamento.js.map
-
-/***/ }),
-
-/***/ 102:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CadastroPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the CadastroPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var CadastroPage = /** @class */ (function () {
-    function CadastroPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.cadastro();
-    }
-    CadastroPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad CadastroPage');
-    };
-    CadastroPage.prototype.cadastro = function () {
-        console.log('ionViewDidLoad CadastroPage');
-    };
-    CadastroPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-cadastro',template:/*ion-inline-start:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\cadastro\cadastro.html"*/'<!--\n\n  Generated template for the CadastroPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n      <button ion-button menuToggle>\n\n          <ion-icon name="Menu"></ion-icon>\n\n        </button>\n\n    <ion-title>Cadastro</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <!-- <form id="cadastroForm" class="list"> -->\n\n  <ion-list id="cadastroLista">\n\n    <ion-item>\n\n      <ion-input type="text" placeholder="Nome" clearInput></ion-input>\n\n    </ion-item>\n\n  \n\n    <ion-item>\n\n      <ion-input type="number" placeholder="Telefone" clearInput></ion-input>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n      <ion-input type="text" placeholder="Sexo" clearInput></ion-input>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n      <ion-input type="date" placeholder="Data Nascimento" clearInput></ion-input>\n\n    </ion-item>\n\n  </ion-list>\n\n  <button ion-button block large color="dark"  >Entrar</button>\n\n  <!-- <button ion-button>Confirmar</button> -->\n\n  <!-- </form> -->\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\cadastro\cadastro.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-    ], CadastroPage);
-    return CadastroPage;
-}());
-
-//# sourceMappingURL=cadastro.js.map
-
-/***/ }),
-
-/***/ 103:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FormaPagamentoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
@@ -194,9 +96,12 @@ var FormaPagamentoPage = /** @class */ (function () {
     FormaPagamentoPage.prototype.formaPagamento = function () {
         console.log('formaPagamento');
     };
+    FormaPagamentoPage.prototype.monthfilter = function () {
+        // console.log(this.filtermonthwise);
+    };
     FormaPagamentoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-forma-pagamento',template:/*ion-inline-start:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\forma-pagamento\forma-pagamento.html"*/'<!--\n\n  Generated template for the FormaPagamentoPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n      <button ion-button menuToggle>\n\n          <ion-icon name="Menu"></ion-icon>\n\n        </button>\n\n    <ion-title>Formas de Pagamento</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-list id="cadastroLista">\n\n        <ion-item>\n\n          <ion-input type="text" placeholder="Nome do titular" clearInput></ion-input>\n\n        </ion-item>\n\n      \n\n        <ion-item>\n\n          <ion-input type="text" placeholder="Bandeira" clearInput></ion-input>\n\n        </ion-item>\n\n\n\n        <!-- <ion-item>\n\n            <ion-label>Month</ion-label>\n\n            <ion-select [(ngModel)]="filtermonthwise" interface="action-sheet" (ionChange)="monthfilter(filtermonthwise);">\n\n              <ion-option value="1">January</ion-option>\n\n              <ion-option value="2">February</ion-option>\n\n              <ion-option value="3">March</ion-option>\n\n              <ion-option value="4">April</ion-option>\n\n              <ion-option value="5">May</ion-option>\n\n              <ion-option value="6">June</ion-option>\n\n              <ion-option value="7">July</ion-option>\n\n              <ion-option value="8">August </ion-option>\n\n              <ion-option value="9">September</ion-option>\n\n              <ion-option value="10">October </ion-option>\n\n              <ion-option value="11">November </ion-option>\n\n              <ion-option value="12">December </ion-option>\n\n      \n\n            </ion-select>\n\n    </ion-item> -->\n\n\n\n        <ion-item>\n\n          <ion-input type="text" placeholder="Sexo" clearInput></ion-input>\n\n   \n\n        </ion-item>\n\n    \n\n        <ion-item>\n\n          <ion-input type="number" placeholder="Data Nascimento" clearInput></ion-input>\n\n        </ion-item>\n\n      </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\forma-pagamento\forma-pagamento.html"*/,
+            selector: 'page-forma-pagamento',template:/*ion-inline-start:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\forma-pagamento\forma-pagamento.html"*/'<!--\n\n  Generated template for the FormaPagamentoPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n      <button ion-button menuToggle>\n\n          <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n    <ion-title>Formas de Pagamento</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-list id="cadastroLista">\n\n        <ion-item>\n\n          <ion-label stacked >Nome do titular</ion-label>\n\n          <ion-input type="text" placeholder="Nome do titular" clearInput></ion-input>\n\n        </ion-item>\n\n        <ion-item>\n\n            <ion-label stacked >Número Cartão</ion-label>\n\n          <ion-input type="text" placeholder="XXXX.XXXX.XXXX.XXXX" maxlength="19" clearInput></ion-input>   \n\n        </ion-item>\n\n        <ion-item>\n\n            <ion-label stacked >Data de Validade</ion-label>\n\n          <ion-input type="text" placeholder="MM/AAAA" maxlength="7" clearInput></ion-input>\n\n        </ion-item>\n\n        <ion-item>\n\n          <ion-label stacked>Bandeira</ion-label>\n\n          <ion-input type="text" placeholder="Bandeira" clearInput></ion-input>\n\n        </ion-item>\n\n      \n\n        <ion-item>\n\n          <ion-label stacked>Dígito Verificador</ion-label>\n\n          <ion-input type="text" placeholder="123" maxlength="3" clearInput></ion-input>\n\n        </ion-item>\n\n\n\n        <!-- <ion-item>\n\n            <ion-label>Month</ion-label>\n\n            <ion-select [(ngModel)]="filtermonthwise" interface="action-sheet" (ionChange)="monthfilter(filtermonthwise);">\n\n              <ion-option value="1">January</ion-option>\n\n              <ion-option value="2">February</ion-option>\n\n              <ion-option value="3">March</ion-option>\n\n              <ion-option value="4">April</ion-option>\n\n              <ion-option value="5">May</ion-option>\n\n              <ion-option value="6">June</ion-option>\n\n              <ion-option value="7">July</ion-option>\n\n              <ion-option value="8">August </ion-option>\n\n              <ion-option value="9">September</ion-option>\n\n              <ion-option value="10">October </ion-option>\n\n              <ion-option value="11">November </ion-option>\n\n              <ion-option value="12">December </ion-option>\n\n      \n\n            </ion-select>\n\n    </ion-item> -->\n\n\n\n     \n\n    \n\n    \n\n      </ion-list>\n\n      <button ion-button block large color="dark">SALVAR</button>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\forma-pagamento\forma-pagamento.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], FormaPagamentoPage);
@@ -207,56 +112,7 @@ var FormaPagamentoPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 104:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SelecionarFormaPagamentoPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the SelecionarFormaPagamentoPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var SelecionarFormaPagamentoPage = /** @class */ (function () {
-    function SelecionarFormaPagamentoPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.SelecionarFormaPagamento();
-    }
-    SelecionarFormaPagamentoPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad SelecionarFormaPagamentoPage');
-    };
-    SelecionarFormaPagamentoPage.prototype.SelecionarFormaPagamento = function () {
-        console.log('');
-    };
-    SelecionarFormaPagamentoPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-selecionar-forma-pagamento',template:/*ion-inline-start:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\selecionar-forma-pagamento\selecionar-forma-pagamento.html"*/'<!--\n\n  Generated template for the SelecionarFormaPagamentoPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n      <button ion-button menuToggle>\n\n          <ion-icon name="Menu"></ion-icon>\n\n        </button>\n\n    <ion-title>selecionarFormaPagamento</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-list id="cadastroLista">\n\n        <ion-item>\n\n          <ion-input type="text" placeholder="Nome" clearInput></ion-input>\n\n        </ion-item>\n\n      \n\n        <ion-item>\n\n          <ion-input type="number" placeholder="Telefone" clearInput></ion-input>\n\n        </ion-item>\n\n    \n\n        <ion-item>\n\n          <ion-input type="text" placeholder="Sexo" clearInput></ion-input>\n\n        </ion-item>\n\n    \n\n        <ion-item>\n\n          <ion-input type="number" placeholder="Data Nascimento" clearInput></ion-input>\n\n        </ion-item>\n\n      </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\selecionar-forma-pagamento\selecionar-forma-pagamento.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-    ], SelecionarFormaPagamentoPage);
-    return SelecionarFormaPagamentoPage;
-}());
-
-//# sourceMappingURL=selecionar-forma-pagamento.js.map
-
-/***/ }),
-
-/***/ 114:
+/***/ 111:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -269,37 +125,37 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 114;
+webpackEmptyAsyncContext.id = 111;
 
 /***/ }),
 
-/***/ 155:
+/***/ 152:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/acompanhar-neto/acompanhar-neto.module": [
 		282,
-		14
+		5
 	],
 	"../pages/agendamento/agendamento.module": [
 		283,
-		13
+		4
 	],
 	"../pages/classificar-neto/classificar-neto.module": [
-		285,
-		12
+		284,
+		3
 	],
 	"../pages/configurar-lembrete/configurar-lembrete.module": [
-		286,
-		11
+		285,
+		2
 	],
 	"../pages/forma-pagamento/forma-pagamento.module": [
-		287,
-		10
+		286,
+		1
 	],
 	"../pages/selecionar-forma-pagamento/selecionar-forma-pagamento.module": [
-		288,
-		9
+		287,
+		0
 	]
 };
 function webpackAsyncContext(req) {
@@ -313,19 +169,20 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 155;
+webpackAsyncContext.id = 152;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 198:
+/***/ 195:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_login_login__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_login_login__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(198);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -339,6 +196,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 // import { Login } from '../login/login.module';
 
+
 var LoginPage = /** @class */ (function () {
     function LoginPage(navCtrl, navParams, toast, loginProvider) {
         this.navCtrl = navCtrl;
@@ -347,6 +205,10 @@ var LoginPage = /** @class */ (function () {
         this.loginProvider = loginProvider;
         this.model = new __WEBPACK_IMPORTED_MODULE_2__providers_login_login__["a" /* Login */]();
     }
+    LoginPage.prototype.abrirnovatela = function () {
+        // this.navCtrl.pop();
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__home_home__["a" /* HomePage */]);
+    };
     LoginPage.prototype.validar = function () {
         var _this = this;
         this.validarUsuario()
@@ -383,7 +245,7 @@ var LoginPage = /** @class */ (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\login\login.html"*/'<br>\n\n<br><ion-header>\n\n  <!-- <ion-navbar color="light">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="Menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Login</ion-title>\n\n  </ion-navbar> -->\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <br>\n\n    <h1>Neto de Aluguel</h1>\n\n    <br>\n\n        <div class="circle">\n\n    <img src="assets/imgs/neto01.png">\n\n  </div>\n\n <h3>Entre ou crie sua conta</h3>\n\n  <ion-list>\n\n    <br>\n\n    <ion-item>\n\n      <ion-label stacked large>Usuário</ion-label>\n\n      <ion-input type="email" [(ngModel)]="model.email" placeholder="Insira o Email"></ion-input>\n\n    </ion-item>\n\n<br>\n\n    <ion-item>\n\n      <ion-label stacked large>Senha</ion-label>\n\n      <ion-input type="password" [(ngModel)]="model.senha" placeholder="Insira a Senha"></ion-input>\n\n    </ion-item>\n\n    <br>\n\n    <br>\n\n    <button ion-button block large color="dark" (click)="abrirnovatela();" >Entrar</button>\n\n<br>\n\n<br>\n\n    <button ion-button block large color="aposclicar">Cadastrar</button>\n\n    <!-- <button ion-button (click)="validar();">Salvar</button>\n\n    <button ion-button (click)="novo();">Novo</button> (click)="showToastWithCloseButton()"-->\n\n  </ion-list>\n\n</ion-content>'/*ion-inline-end:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\login\login.html"*/
+            selector: 'page-login',template:/*ion-inline-start:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\login\login.html"*/'<br>\n\n<ion-header>\n\n  <!-- <ion-navbar color="light" hide-nav-bar="false">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Login</ion-title>\n\n  </ion-navbar> -->\n\n  <br>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <h1>Neto de Aluguel</h1>\n\n        <div class="circle">\n\n    <img src="assets/imgs/neto01.png">\n\n  </div>\n\n <h3>Entre ou crie sua conta</h3>\n\n  <ion-list>\n\n    <ion-item>\n\n      <ion-label stacked large>E-mail</ion-label>\n\n      <ion-input type="email" [(ngModel)]="model.email" placeholder="joao@email.com"></ion-input>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label stacked large>Senha</ion-label>\n\n      <ion-input type="password" [(ngModel)]="model.senha" placeholder="Insira a Senha"></ion-input>\n\n    </ion-item>\n\n    <button ion-button block large color="dark" (click)="abrirnovatela();" >ENTRAR</button>\n\n    <button ion-button block large color="aposclicar" (click)="abrirnovatela();">CADASTRAR</button>\n\n    <!-- <button ion-button (click)="validar();">Salvar</button>\n\n    <button ion-button (click)="novo();">Novo</button> (click)="showToastWithCloseButton()"-->\n\n  </ion-list>\n\n</ion-content>'/*ion-inline-end:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\login\login.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ToastController */], __WEBPACK_IMPORTED_MODULE_2__providers_login_login__["b" /* LoginProvider */]])
@@ -395,7 +257,7 @@ var LoginPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 199:
+/***/ 196:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -484,7 +346,91 @@ var Login = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 201:
+/***/ 198:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var HomePage = /** @class */ (function () {
+    function HomePage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    HomePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-home',template:/*ion-inline-start:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>BEM VINDO!</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h3>Seja bem vindo ao neto de aluguel!</h3>\n\n  <p>\n   Aqui você pode encontrar um ajudante para algumas tarefas do seu dia-a-dia.\n  </p>\n\n  <img src="assets/imgs/neto01.png">\n  \n  <button ion-button secondary menuToggle color="aposclicar"> Menu</button>\n</ion-content>\n'/*ion-inline-end:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\home\home.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
+    ], HomePage);
+    return HomePage;
+}());
+
+//# sourceMappingURL=home.js.map
+
+/***/ }),
+
+/***/ 199:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CadastroPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the CadastroPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var CadastroPage = /** @class */ (function () {
+    function CadastroPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.cadastro();
+    }
+    CadastroPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad CadastroPage');
+    };
+    CadastroPage.prototype.cadastro = function () {
+        console.log('ionViewDidLoad CadastroPage');
+    };
+    CadastroPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-cadastro',template:/*ion-inline-start:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\cadastro\cadastro.html"*/'<!--\n\n  Generated template for the CadastroPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n      <button ion-button menuToggle>\n\n          <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n    <ion-title>Cadastro</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <!-- <form id="cadastroForm" class="list"> -->\n\n  <ion-list id="cadastroLista">\n\n    <ion-item>\n\n        <ion-label stacked >Nome</ion-label>\n\n      <ion-input type="text" placeholder="Nome" clearInput></ion-input>\n\n    </ion-item>\n\n  \n\n    <ion-item>\n\n        <ion-label stacked >Telefone</ion-label>\n\n      <ion-input type="text" placeholder="(DDD)99999-9999" maxlength="16" clearInput></ion-input>\n\n    </ion-item>\n\n  </ion-list>\n\n  <button ion-button block large color="dark">SALVAR</button>\n\n  <!-- <button ion-button>Confirmar</button> -->\n\n  <!-- </form> -->\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\cadastro\cadastro.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+    ], CadastroPage);
+    return CadastroPage;
+}());
+
+//# sourceMappingURL=cadastro.js.map
+
+/***/ }),
+
+/***/ 200:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -530,6 +476,55 @@ var AcompanharNetoPage = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=acompanhar-neto.js.map
+
+/***/ }),
+
+/***/ 201:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AgendamentoPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the AgendamentoPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var AgendamentoPage = /** @class */ (function () {
+    function AgendamentoPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.agendamento();
+    }
+    AgendamentoPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad AgendamentoPage');
+    };
+    AgendamentoPage.prototype.agendamento = function () {
+        console.log('formaPagamento');
+    };
+    AgendamentoPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-agendamento',template:/*ion-inline-start:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\agendamento\agendamento.html"*/'<!--\n\n  Generated template for the AgendamentoPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n      <button ion-button menuToggle>\n\n          <ion-icon name="Menu"></ion-icon>\n\n        </button>\n\n    <ion-title>agendamento</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-list id="cadastroLista">\n\n        <ion-item>\n\n          <ion-input type="text" placeholder="Nome" clearInput></ion-input>\n\n        </ion-item>\n\n      \n\n        <ion-item>\n\n          <ion-input type="number" placeholder="Telefone" clearInput></ion-input>\n\n        </ion-item>\n\n    \n\n        <ion-item>\n\n          <ion-input type="text" placeholder="Sexo" clearInput></ion-input>\n\n        </ion-item>\n\n    \n\n        <ion-item>\n\n          <ion-input type="number" placeholder="Data Nascimento" clearInput></ion-input>\n\n        </ion-item>\n\n\n\n        <ion-item>\n\n          <ion-label>Start Time</ion-label>\n\n          <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeStarts"></ion-datetime>\n\n        </ion-item>\n\n      </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\agendamento\agendamento.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+    ], AgendamentoPage);
+    return AgendamentoPage;
+}());
+
+//# sourceMappingURL=agendamento.js.map
 
 /***/ }),
 
@@ -631,9 +626,58 @@ var ConfigurarLembretePage = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SelecionarFormaPagamentoPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the SelecionarFormaPagamentoPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var SelecionarFormaPagamentoPage = /** @class */ (function () {
+    function SelecionarFormaPagamentoPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.SelecionarFormaPagamento();
+    }
+    SelecionarFormaPagamentoPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad SelecionarFormaPagamentoPage');
+    };
+    SelecionarFormaPagamentoPage.prototype.SelecionarFormaPagamento = function () {
+        console.log('');
+    };
+    SelecionarFormaPagamentoPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-selecionar-forma-pagamento',template:/*ion-inline-start:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\selecionar-forma-pagamento\selecionar-forma-pagamento.html"*/'<!--\n\n  Generated template for the SelecionarFormaPagamentoPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n      <button ion-button menuToggle>\n\n          <ion-icon name="Menu"></ion-icon>\n\n        </button>\n\n    <ion-title>selecionarFormaPagamento</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-list id="cadastroLista">\n\n        <ion-item>\n\n          <ion-input type="text" placeholder="Nome" clearInput></ion-input>\n\n        </ion-item>\n\n      \n\n        <ion-item>\n\n          <ion-input type="number" placeholder="Telefone" clearInput></ion-input>\n\n        </ion-item>\n\n    \n\n        <ion-item>\n\n          <ion-input type="text" placeholder="Sexo" clearInput></ion-input>\n\n        </ion-item>\n\n    \n\n        <ion-item>\n\n          <ion-input type="number" placeholder="Data Nascimento" clearInput></ion-input>\n\n        </ion-item>\n\n      </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\selecionar-forma-pagamento\selecionar-forma-pagamento.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+    ], SelecionarFormaPagamentoPage);
+    return SelecionarFormaPagamentoPage;
+}());
+
+//# sourceMappingURL=selecionar-forma-pagamento.js.map
+
+/***/ }),
+
+/***/ 205:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(227);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(228);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -641,7 +685,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 227:
+/***/ 228:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -650,23 +694,23 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(270);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(279);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(271);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_list_list__ = __webpack_require__(280);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_login_login__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_sqlite__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_status_bar__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_splash_screen__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_login_login__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_sqlite__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_status_bar__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_splash_screen__ = __webpack_require__(194);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_signup_signup__ = __webpack_require__(281);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_cadastro_cadastro__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_forma_pagamento_forma_pagamento__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_cadastro_cadastro__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_forma_pagamento_forma_pagamento__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_configurar_lembrete_configurar_lembrete__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_acompanhar_neto_acompanhar_neto__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_selecionar_forma_pagamento_selecionar_forma_pagamento__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_agendamento_agendamento__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_acompanhar_neto_acompanhar_neto__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_selecionar_forma_pagamento_selecionar_forma_pagamento__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_agendamento_agendamento__ = __webpack_require__(201);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_classificar_neto_classificar_neto__ = __webpack_require__(202);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__providers_database_database__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_login_login__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_login_login__ = __webpack_require__(196);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -719,7 +763,6 @@ var AppModule = /** @class */ (function () {
                     links: [
                         { loadChildren: '../pages/acompanhar-neto/acompanhar-neto.module#AcompanharNetoPageModule', name: 'AcompanharNetoPage', segment: 'acompanhar-neto', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/agendamento/agendamento.module#AgendamentoPageModule', name: 'AgendamentoPage', segment: 'agendamento', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/cadastro/cadastro.module#CadastroPageModule', name: 'CadastroPage', segment: 'cadastro', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/classificar-neto/classificar-neto.module#ClassificarNetoPageModule', name: 'ClassificarNetoPage', segment: 'classificar-neto', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/configurar-lembrete/configurar-lembrete.module#ConfigurarLembretePageModule', name: 'ConfigurarLembretePage', segment: 'configurar-lembrete', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/forma-pagamento/forma-pagamento.module#FormaPagamentoPageModule', name: 'FormaPagamentoPage', segment: 'forma-pagamento', priority: 'low', defaultHistory: [] },
@@ -761,21 +804,19 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 270:
+/***/ 271:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_cadastro_cadastro__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_forma_pagamento_forma_pagamento__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_selecionar_forma_pagamento_selecionar_forma_pagamento__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_agendamento_agendamento__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_database_database__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_cadastro_cadastro__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_forma_pagamento_forma_pagamento__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_database_database__ = __webpack_require__(100);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -790,8 +831,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 // import { HomePage } from '../pages/home/home';
-
-
 
 
 
@@ -818,76 +857,41 @@ var MyApp = /** @class */ (function () {
                 { title: 'Login', component: __WEBPACK_IMPORTED_MODULE_4__pages_login_login__["a" /* LoginPage */] },
                 { title: 'Cadastro', component: __WEBPACK_IMPORTED_MODULE_5__pages_cadastro_cadastro__["a" /* CadastroPage */] },
                 { title: 'Forma de Pagamento', component: __WEBPACK_IMPORTED_MODULE_6__pages_forma_pagamento_forma_pagamento__["a" /* FormaPagamentoPage */] },
-                { title: 'Selecionar Forma de Pagamento', component: __WEBPACK_IMPORTED_MODULE_7__pages_selecionar_forma_pagamento_selecionar_forma_pagamento__["a" /* SelecionarFormaPagamentoPage */] },
-                { title: 'Agendamentos', component: __WEBPACK_IMPORTED_MODULE_8__pages_agendamento_agendamento__["a" /* AgendamentoPage */] },
             ];
         }
     }
+    MyApp.prototype.sair = function () { this.platform.exitApp(); };
     MyApp.prototype.criaBanco = function () {
-        var _this = this;
         this.statusBar.styleDefault();
         this.dbProvider.createDatabase()
             .then(function () {
             // fechando a SplashScreen somente quando o banco for criado
-            _this.openHomePage(_this.splashScreen);
+            // this.openPage(this.splashScreen);
         })
             .catch(function () {
             // ou se houver erro na criação do banco
-            _this.openHomePage(_this.splashScreen);
+            // this.openPage(this.splashScreen);
         });
     };
-    MyApp.prototype.openHomePage = function (splashScreen) {
-        splashScreen.hide();
-        this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_login_login__["a" /* LoginPage */];
+    // private openPage(navCtrl: Nav) {
+    //   this.rootPage = navCtrl;
+    // }
+    MyApp.prototype.openPage = function (page) {
+        this.nav.setRoot(page.component);
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */]),
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\jessica\Documents\IONIC\appNeto\src\app\app.html"*/'<ion-menu [content]="content">\n\n  <ion-header>\n\n    <ion-toolbar>\n\n      <ion-title>Menu</ion-title>\n\n    </ion-toolbar>\n\n  </ion-header>\n\n\n\n  <ion-content>\n\n    <ion-list>\n\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n\n        {{p.title}}\n\n      </button>\n\n    </ion-list>\n\n  </ion-content>\n\n\n\n</ion-menu>\n\n\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="true"></ion-nav>'/*ion-inline-end:"C:\Users\jessica\Documents\IONIC\appNeto\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\jessica\Documents\IONIC\appNeto\src\app\app.html"*/'<ion-menu [content]="content">\n\n  <ion-header>\n\n    <ion-toolbar>\n\n      <ion-title>Menu</ion-title>\n\n    </ion-toolbar>\n\n  </ion-header>\n\n\n\n  <ion-content>\n\n    <ion-list>\n\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n\n        {{p.title}}\n\n      </button>\n\n    </ion-list>\n\n  </ion-content>\n\n\n\n</ion-menu>\n\n\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n\n<!-- <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav> -->\n\n<ion-nav #content [root]="rootPage"></ion-nav>'/*ion-inline-end:"C:\Users\jessica\Documents\IONIC\appNeto\src\app\app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_9__providers_database_database__["a" /* DatabaseProvider */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_7__providers_database_database__["a" /* DatabaseProvider */]])
     ], MyApp);
     return MyApp;
 }());
 
 //# sourceMappingURL=app.component.js.map
-
-/***/ }),
-
-/***/ 279:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var HomePage = /** @class */ (function () {
-    function HomePage(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    HomePage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h3>Ionic Menu Starter</h3>\n\n  <p>\n    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.\n  </p>\n\n  <button ion-button secondary menuToggle>Toggle Menu</button>\n</ion-content>\n'/*ion-inline-end:"C:\Users\jessica\Documents\IONIC\appNeto\src\pages\home\home.html"*/
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
-    ], HomePage);
-    return HomePage;
-}());
-
-//# sourceMappingURL=home.js.map
 
 /***/ }),
 
@@ -983,5 +987,5 @@ var SignupPage = /** @class */ (function () {
 
 /***/ })
 
-},[204]);
+},[205]);
 //# sourceMappingURL=main.js.map

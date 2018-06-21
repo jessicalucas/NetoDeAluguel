@@ -3,6 +3,7 @@ import { NavController, NavParams, ToastController  } from 'ionic-angular';
 // import { Login } from '../login/login.module';
 import { LoginProvider, Login} from '../../providers/login/login';
 import { CadastroPage } from '../cadastro/cadastro';
+import { HomePage } from '../home/home';
 
 @Component({
   selector: 'page-login',
@@ -18,7 +19,8 @@ export class LoginPage {
 
   abrirnovatela()
   {
-    this.navCtrl.push(CadastroPage);
+    //
+    this.navCtrl.push(HomePage);
   }
 
   validar() {

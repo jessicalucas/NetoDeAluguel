@@ -1,22 +1,9 @@
 page-forma-pagamento {
     $padding: 6px;
 
-    nav {
-      ul {
-        margin: 0;
-        padding: $padding;
-        list-style: none;
-      }
-    
-      li { display: inline-block; }
-    
-      a {
-        display: block;
-        padding: $padding 12px;
-        text-decoration: none;
-      }
-    }
-
-    $text-input-highlight-color-valid:green;
-    $text-input-highlight-color-invalid:red;
+    input {
+      font-size:18px !important;
+      font-size-adjust: 0.3!important;
+      // text-align: center;
+  };
 }

@@ -8,7 +8,7 @@
 
   <ion-navbar>
       <button ion-button menuToggle>
-          <ion-icon name="Menu"></ion-icon>
+          <ion-icon name="menu"></ion-icon>
         </button>
     <ion-title>Cadastro</ion-title>
   </ion-navbar>
@@ -20,22 +20,16 @@
     <!-- <form id="cadastroForm" class="list"> -->
   <ion-list id="cadastroLista">
     <ion-item>
+        <ion-label stacked >Nome</ion-label>
       <ion-input type="text" placeholder="Nome" clearInput></ion-input>
     </ion-item>
   
     <ion-item>
-      <ion-input type="number" placeholder="Telefone" clearInput></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-input type="text" placeholder="Sexo" clearInput></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-input type="date" placeholder="Data Nascimento" clearInput></ion-input>
+        <ion-label stacked >Telefone</ion-label>
+      <ion-input type="text" placeholder="(DDD)99999-9999" maxlength="16" clearInput></ion-input>
     </ion-item>
   </ion-list>
-  <button ion-button block large color="dark"  >Entrar</button>
+  <button ion-button block large color="dark">SALVAR</button>
   <!-- <button ion-button>Confirmar</button> -->
   <!-- </form> -->
 </ion-content>

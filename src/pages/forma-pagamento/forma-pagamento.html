@@ -8,7 +8,7 @@
 
   <ion-navbar>
       <button ion-button menuToggle>
-          <ion-icon name="Menu"></ion-icon>
+          <ion-icon name="menu"></ion-icon>
         </button>
     <ion-title>Formas de Pagamento</ion-title>
   </ion-navbar>
@@ -19,11 +19,25 @@
 <ion-content padding>
     <ion-list id="cadastroLista">
         <ion-item>
+          <ion-label stacked >Nome do titular</ion-label>
           <ion-input type="text" placeholder="Nome do titular" clearInput></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label stacked >Número Cartão</ion-label>
+          <ion-input type="text" placeholder="XXXX.XXXX.XXXX.XXXX" maxlength="19" clearInput></ion-input>   
+        </ion-item>
+        <ion-item>
+            <ion-label stacked >Data de Validade</ion-label>
+          <ion-input type="text" placeholder="MM/AAAA" maxlength="7" clearInput></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label stacked>Bandeira</ion-label>
+          <ion-input type="text" placeholder="Bandeira" clearInput></ion-input>
         </ion-item>
       
         <ion-item>
-          <ion-input type="text" placeholder="Bandeira" clearInput></ion-input>
+          <ion-label stacked>Dígito Verificador</ion-label>
+          <ion-input type="text" placeholder="123" maxlength="3" clearInput></ion-input>
         </ion-item>
 
         <!-- <ion-item>
@@ -45,13 +59,9 @@
             </ion-select>
     </ion-item> -->
 
-        <ion-item>
-          <ion-input type="text" placeholder="Sexo" clearInput></ion-input>
-   
-        </ion-item>
+     
     
-        <ion-item>
-          <ion-input type="number" placeholder="Data Nascimento" clearInput></ion-input>
-        </ion-item>
+    
       </ion-list>
+      <button ion-button block large color="dark">SALVAR</button>
 </ion-content>

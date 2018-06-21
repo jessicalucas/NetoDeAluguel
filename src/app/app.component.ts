@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { Nav, Platform } from 'ionic-angular';
+import { Nav, Platform, Button } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -35,19 +35,23 @@ export class MyApp {
       // Barra lateral de navegação
       this.pages = [
         // { title: 'Home', component: HomePage },
-        { title: 'Login', component: LoginPage },
+      
         { title: 'Cadastro', component: CadastroPage },
         { title: 'Forma de Pagamento', component: FormaPagamentoPage },
-        { title: 'Selecionar Forma de Pagamento', component: SelecionarFormaPagamentoPage },
+        // { title: 'Selecionar Forma de Pagamento', component: SelecionarFormaPagamentoPage },
         { title: 'Agendamentos', component: AgendamentoPage },
         // { title: 'Configuração dos Lembretes', component: ConfigurarLembretePage },
         // { title: 'Acompanhar Neto', component: AcompanharNetoPage },
         // { title: 'Dar nota', component: ClassificarNetoPage }
+        { title: 'Sair', component: LoginPage },
       ];
 
     }
 
   }
+
+  sair()
+  {this.platform.exitApp()}
 
   criaBanco() {
 
@@ -55,16 +59,20 @@ export class MyApp {
     this.dbProvider.createDatabase()
       .then(() => {
         // fechando a SplashScreen somente quando o banco for criado
-        this.openHomePage(this.splashScreen);
+        // this.openPage(this.splashScreen);
       })
       .catch(() => {
         // ou se houver erro na criação do banco
-        this.openHomePage(this.splashScreen);
+        // this.openPage(this.splashScreen);
       });
   }
 
-  private openHomePage(splashScreen: SplashScreen) {
-    splashScreen.hide();
-    this.rootPage = LoginPage;
+  // private openPage(navCtrl: Nav) {
+  //   this.rootPage = navCtrl;
+  // }
+
+  openPage(page) {
+    this.nav.setRoot(page.component);
   }
+
 }
